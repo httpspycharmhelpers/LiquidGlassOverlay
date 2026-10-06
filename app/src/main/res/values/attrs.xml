@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="LiquidGlassView">
+        
+        <attr name="displacementScale" format="float" />
+        <attr name="blurAmount" format="float" />
+        <attr name="saturation" format="float" />
+        <attr name="aberrationIntensity" format="float" />
+        <attr name="elasticity" format="float" />
+        <attr name="cornerRadius" format="dimension" />
+        
+        <attr name="cornerRadiusTopLeft" format="dimension" />
+        <attr name="cornerRadiusTopRight" format="dimension" />
+        <attr name="cornerRadiusBottomRight" format="dimension" />
+        <attr name="cornerRadiusBottomLeft" format="dimension" />
+        
+        <attr name="flatEdges">
+            <flag name="top" value="1" />
+            <flag name="right" value="2" />
+            <flag name="bottom" value="4" />
+            <flag name="left" value="8" />
+        </attr>
+        
+        <attr name="backdropSourceId" format="reference" />
+
+        
+        <attr name="glassMaterial" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="clear" value="1" />
+        </attr>
+        <attr name="bevelWidth" format="dimension" />
+        <attr name="refractionHeight" format="dimension" />
+        <attr name="dispersionStrength" format="float" />
+        
+        <attr name="edgeSoftness" format="dimension" />
+        <attr name="sensorHighlight" format="boolean" />
+        <attr name="adaptiveTint" format="boolean" />
+        
+        <attr name="adaptiveLensScale" format="boolean" />
+        
+        <attr name="refractionOutward" format="boolean" />
+        
+        <attr name="refractionNoFold" format="boolean" />
+        
+        <attr name="refractionFalloff" format="float" />
+
+        
+        <attr name="glassTint" format="color" />
+        <attr name="glassTintStrength" format="float" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassButton">
+        <attr name="android:text" />
+        <attr name="android:textSize" />
+        
+        <attr name="android:textColor" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassFab">
+        <attr name="android:src" />
+        
+        <attr name="glassIconTint" format="color" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassListItem">
+        <attr name="glassListPosition" format="enum">
+            <enum name="single" value="0" />
+            <enum name="first" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="last" value="3" />
+        </attr>
+        <attr name="glassHeadline" format="string" />
+        <attr name="glassSupportingText" format="string" />
+        <attr name="glassLeadingIcon" format="reference" />
+        <attr name="glassTrailingIcon" format="reference" />
+        <attr name="glassTrailingText" format="string" />
+        
+        <attr name="glassGroupCornerRadius" format="dimension" />
+        <attr name="glassInnerCornerRadius" format="dimension" />
+        
+        <attr name="android:textColor" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassListGroup">
+        
+        <attr name="glassListStyle" format="enum">
+            <enum name="merged" value="0" />
+            <enum name="separated" value="1" />
+        </attr>
+        
+        <attr name="glassItemSpacing" format="dimension" />
+        
+        <attr name="cornerRadius" />
+        
+        <attr name="backdropSourceId" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassTabBar">
+        <attr name="glassTabEntries" format="reference" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassTabLayout">
+        <attr name="glassTabEntries" />
+        
+        <attr name="glassTabMode" format="enum">
+            <enum name="fixed" value="0" />
+            <enum name="scrollable" value="1" />
+        </attr>
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassChip">
+        <attr name="android:text" />
+        <attr name="android:textSize" />
+        
+        <attr name="android:textColor" />
+        <attr name="android:checkable" />
+        <attr name="android:checked" />
+        <attr name="glassChipIcon" format="reference" />
+        <attr name="glassCloseIconVisible" format="boolean" />
+        
+        <attr name="glassCheckedIconVisible" format="boolean" />
+        
+        <attr name="glassCheckedTint" format="color" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="LiquidGlassChipGroup">
+        <attr name="glassChipSpacingHorizontal" format="dimension" />
+        <attr name="glassChipSpacingVertical" format="dimension" />
+        
+        <attr name="glassSingleLine" format="boolean" />
+        <attr name="glassSingleSelection" format="boolean" />
+        
+        <attr name="glassSelectionRequired" format="boolean" />
+        
+        <attr name="backdropSourceId" />
+    </declare-styleable>
+</resources>

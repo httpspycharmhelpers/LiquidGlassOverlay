@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <style name="Animation.LiquidGlass.Dialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/liquid_glass_dialog_none</item>
+        <item name="android:windowExitAnimation">@anim/liquid_glass_dialog_exit</item>
+    </style>
+
+</resources>

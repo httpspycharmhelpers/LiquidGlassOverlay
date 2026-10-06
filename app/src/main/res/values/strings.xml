@@ -1,0 +1,295 @@
+
+<resources>
+    <string name="app_name">LiquidGlass</string>
+
+    <!-- Main UI -->
+    <string name="glass_button_text">✨ LiquidGlass\nEffect Demo</string>
+    <string name="performance_waiting">Performance: Waiting for data…</string>
+
+    <!-- Debug Panel -->
+    <string name="debug_panel_title">⚙️ Debug Panel</string>
+
+    <!-- Performance Section -->
+    <string name="section_performance">Performance Monitor</string>
+    <string name="switch_performance_overlay">Show Performance Overlay</string>
+    <string name="debug_info_waiting">Waiting for performance data…</string>
+
+    <!-- Render Path Section -->
+    <string name="section_render_path">Render Path</string>
+    <string name="switch_gpu_render">GPU Accelerated Rendering (API 31+)</string>
+    <string name="gpu_render_desc">When ON, blur/saturation (and chromatic aberration on API 33+) run entirely on the GPU via RenderEffect, and the CPU algorithm options below have no effect. Turn OFF to test CPU algorithms (blur method, C++/Kotlin aberration, downsampling, etc.).</string>
+
+    <!-- Blur Method Section -->
+    <string name="section_blur_method">Blur Algorithm</string>
+    <string name="current_blur_method">Current: Smart Selection</string>
+    <string name="blur_method_smart">Smart Selection (Recommended)</string>
+    <string name="blur_method_box">Box Blur (Kotlin)</string>
+    <string name="blur_method_box_cpp">Box Blur (C++)</string>
+    <string name="blur_method_iir">IIR Gaussian (Scalar)</string>
+    <string name="blur_method_neon">IIR Gaussian (NEON)</string>
+    <string name="blur_method_box3">Box3 Fast Blur</string>
+    <string name="blur_method_downsample">Downsample Pipeline</string>
+    <string name="blur_method_desc">• Smart Selection: Auto choose optimal algorithm\n• Box Blur (Kotlin): Traditional box blur (Kotlin)\n• Box Blur (C++): Native box blur (C++, faster)\n• IIR Gaussian: C++ recursive Gaussian blur\n• IIR NEON: ARM SIMD vectorized\n• Box3: 3-pass box approximation\n• Downsample: Strong blur optimization</string>
+
+    <!-- Aberration Method Section -->
+    <string name="section_aberration_method">Chromatic Aberration Algorithm</string>
+    <string name="current_aberration_method">Current: Auto Selection</string>
+    <string name="aberration_method_auto">Auto Selection (Recommended)</string>
+    <string name="aberration_method_cpp">C++ Implementation (High Performance)</string>
+    <string name="aberration_method_kotlin">Kotlin Implementation (Compatible)</string>
+    <string name="aberration_method_desc">• Auto Selection: Smart choice based on image size\n• C++ Implementation: High-performance native (3-5x boost)\n• Kotlin Implementation: Pure Kotlin (better compatibility)\n\nRecommended:\n- Large/Real-time → C++ Implementation\n- Small/Static → Kotlin Implementation</string>
+
+    <!-- Effect Switches -->
+    <string name="section_effect_switches">Effect Switches</string>
+    <string name="switch_enable_blur">Enable Blur Effect</string>
+    <string name="switch_enable_aberration">Enable Chromatic Aberration</string>
+    <string name="switch_enable_chromatic_effect">Enable Chromatic Effect</string>
+    <string name="switch_enable_saturation">Enable Saturation Adjustment</string>
+
+    <!-- Parameters -->
+    <string name="section_blur_params">Blur Parameters</string>
+    <string name="blur_amount">Blur Amount: %.3f</string>
+
+    <string name="section_saturation">Saturation</string>
+    <string name="saturation_value">Saturation: %d%%</string>
+
+    <string name="section_aberration">Chromatic Aberration Intensity</string>
+    <string name="aberration_value">Aberration: %.1f</string>
+
+    <!-- Downsample -->
+    <string name="section_global_downsample">Global Downsample (All Effects)</string>
+    <string name="global_downsample_value">Global Downsample: %.2fx</string>
+    <string name="global_downsample_none">Global Downsample: 1.00x (No Downsample)</string>
+
+    <string name="section_aberration_downsample">Chromatic Aberration Downsample</string>
+    <string name="aberration_downsample_value">Aberration Downsample: %.2fx</string>
+
+    <!-- Channel Offset -->
+    <string name="section_channel_offset">Channel Offset</string>
+    <string name="red_offset">Red Offset: %.2f</string>
+    <string name="green_offset">Green Offset: %.2f</string>
+    <string name="blue_offset">Blue Offset: %.2f</string>
+
+    <!-- Quality -->
+    <string name="switch_high_quality">High Quality Blur (Linear Color Space)</string>
+
+    <!-- Image Size Info -->
+    <string name="section_image_size">Image Size Info</string>
+    <string name="image_size_waiting">Waiting for data…</string>
+    <string name="captured_size">Captured Size: %s</string>
+    <string name="blurred_size">Actual Blur Size: %s</string>
+    <string name="size_info_desc">Note:\n- Captured Size = LiquidGlass button size\n- Blur Size = Actual processed image size\n- If different, downsample optimization is used</string>
+
+    <!-- Background & Language Section -->
+    <string name="section_background_language">Background &amp; Language</string>
+    <string name="button_change_background">Change Background Image</string>
+    <string name="button_open_github">Open on GitHub</string>
+    <string name="github_star_button">★ Star on GitHub</string>
+    <string name="button_language_chinese">切换到中文</string>
+    <string name="button_language_english">Switch to English</string>
+    <string name="current_language">Current Language: English</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_image_selected">Background image updated</string>
+    <string name="toast_language_changed">Language changed to English</string>
+    <string name="toast_no_image_selected">No image selected</string>
+
+    <!-- Performance Display -->
+    <string name="fps_format">FPS: ~%d</string>
+    <string name="capture_time">Capture: %sms</string>
+    <string name="blur_time">Blur: %sms (%s)</string>
+    <string name="aberration_time">Aberration: %sms (%s)</string>
+    <string name="total_time">Total: %sms</string>
+
+    <!-- Edge Highlight -->
+    <string name="section_edge_highlight">Edge Highlight</string>
+    <string name="switch_enable_edge_highlight">Enable Edge Highlight</string>
+    <string name="switch_over_light">Over Light Mode</string>
+    <string name="border_width">Border Width: %.1f px</string>
+    <string name="highlight_opacity">Highlight Opacity: %.0f%%</string>
+
+    <!-- Chromatic Aberration Quality -->
+    <string name="section_aberration_quality">Chromatic Aberration Quality</string>
+    <string name="switch_bilinear_interpolation">Use Bilinear Interpolation (High Quality)</string>
+    <string name="bilinear_desc">• Enabled: Smooth sampling, no mosaic (2-3x slower)\n• Disabled: Nearest-neighbor, faster (may have slight mosaic)\n\nNote: Affects both Kotlin and C++ implementations.</string>
+
+    <!-- Chromatic Dispersion (NEW) -->
+    <string name="section_chromatic_dispersion">Chromatic Dispersion (Physics-Based)</string>
+    <string name="switch_enable_dispersion">Enable Chromatic Dispersion</string>
+    <string name="dispersion_desc">Physics-based glass dispersion effect using Snell\'s law.\n• Realistic glass/crystal effect\n• Edge-based refraction\n• RGB wavelength separation</string>
+
+    <string name="dispersion_thickness">Refraction Thickness: %.0fpx</string>
+    <string name="dispersion_factor">Refraction Factor: %.2f</string>
+    <string name="dispersion_gain">Dispersion Gain: %.1f</string>
+    <string name="dispersion_downscale">Dispersion Downsample: %.2fx</string>
+
+    <string name="dispersion_preset">Dispersion Preset</string>
+    <string name="preset_glass">Glass</string>
+    <string name="preset_diamond">Diamond</string>
+    <string name="preset_crystal">Crystal</string>
+    <string name="preset_rainbow">Rainbow</string>
+    <string name="preset_subtle">Subtle</string>
+    <string name="preset_custom">Custom</string>
+
+    <!-- Effect Algorithm Selection -->
+    <string name="effect_algorithm">Effect Algorithm</string>
+    <string name="algorithm_aberration">Chromatic Aberration</string>
+    <string name="algorithm_dispersion">Chromatic Dispersion</string>
+
+    <!-- Optimized Capture -->
+    <string name="section_optimized_capture">Optimized Capture</string>
+    <string name="switch_enable_optimized_capture">Enable Optimized Capture</string>
+    <string name="optimized_capture_desc">• Enabled: Capture only rounded corner area, reduce rendering\n• Disabled: Capture full rectangular area\n\nUse cases: Rounded buttons, rounded cards\nPerformance gain: ~5-8%</string>
+
+    <!-- Demo Scenes -->
+    <string name="scene_playground">Playground</string>
+    <string name="playground_bg_gradient">Gradient</string>
+    <string name="playground_bg_image">Image</string>
+    <string name="playground_bg_animated">Animated</string>
+
+    <!-- Modern Panel -->
+    <string name="section_glass_params">Glass Parameters (GPU + CPU)</string>
+    <string name="section_color_effect">Color Effect</string>
+    <string name="section_cpu_options">CPU Algorithm Options</string>
+    <string name="render_gpu_first">GPU First</string>
+    <string name="render_force_cpu">Force CPU</string>
+    <string name="effect_none">None</string>
+    <string name="impl_auto">Auto</string>
+    <string name="corner_radius_value">Corner Radius: %.0f px</string>
+    <string name="displacement_scale_value">Displacement Scale: %.0f</string>
+    <string name="displacement_mode">Displacement Mode</string>
+    <string name="disp_mode_standard">Standard</string>
+    <string name="disp_mode_polar">Polar</string>
+    <string name="disp_mode_prominent">Prominent</string>
+    <string name="dispersion_cpu_only_note">Dispersion is implemented on the CPU pipeline only — enabling it automatically falls back to CPU rendering.</string>
+    <string name="channel_offset_advanced">Advanced · Channel Offsets</string>
+
+    <!-- Interaction / Press Effect -->
+    <string name="section_interaction">Interaction · Press Effect</string>
+    <string name="switch_press_effect">Enable Press Effect</string>
+    <string name="press_scale_value">Press Scale: %.2f</string>
+    <string name="elasticity_value">Elasticity: %.2f</string>
+
+    <!-- Liquid Glass 2.0 (Lens Pipeline) -->
+    <string name="scene_merge">Merge</string>
+    <string name="scene_home">Home</string>
+    <string name="scene_control_center">Control Center</string>
+    <string name="cc_hint">Pull down to open Control Center, swipe up to close it. Tap the power icon for the demo controls.</string>
+    <string name="scene_list">List</string>
+    <string name="scene_text">Text</string>
+    <string name="text_scene_hint">Type anything — it becomes glass</string>
+    <string name="text_scene_apply">Apply</string>
+    <string name="text_scene_default">Liquid</string>
+    <string name="scene_overlays">Overlays</string>
+    <string name="sheet_open">Open bottom sheet</string>
+    <string name="sheet_title">Glass in a separate window</string>
+    <string name="sheet_body">The sheet has its own window, so the backdrop comes from the activity content view via backdropSource.</string>
+    <string name="sheet_dialog_open">Open glass dialog</string>
+    <string name="sheet_dialog_title">Liquid Glass Dialog</string>
+    <string name="sheet_dialog_body">A Material dialog whose whole panel sits inside a LiquidGlassView.</string>
+    <string name="sheet_toast_open">Show glass toast</string>
+    <string name="sheet_toast_text">Glass toast · its own window, above sheets and dialogs</string>
+    <string name="simulate_api_label">Simulate API Level</string>
+    <string name="api_cap_device">Device</string>
+    <string name="simulate_api_desc">Clamps the pipeline tier to preview older devices: 36+ AGSL color filter/blend extras · 33–35 lens · 31–32 classic GPU · ≤30 CPU. The overlay shows real → effective API.</string>
+    <string name="render_lens">Lens 2.0</string>
+    <string name="render_classic_gpu">Classic GPU</string>
+    <string name="section_lens">Liquid Glass 2.0 · Lens (API 33+)</string>
+    <string name="lens_note">Single-pass AGSL lens: real SDF refraction, edge dispersion, normal-driven rim light (two symmetric lobes, gravity-sensor light), adaptive tint and liquid merge. Falls back automatically below API 33.</string>
+    <string name="lens_material">Material</string>
+    <string name="material_regular">Regular</string>
+    <string name="material_clear">Clear</string>
+    <string name="switch_sensor_highlight">Sensor-Driven Highlight</string>
+    <string name="switch_adaptive_tint">Adaptive Luminance Tint</string>
+    <string name="switch_refraction_no_fold">No-fold Refraction (iOS-like stretch)</string>
+    <string name="switch_refraction_outward">Outward Refraction (convex lens)</string>
+    <string name="switch_adaptive_lens_scale">Adaptive Lens Scale (small controls)</string>
+    <string name="lens_bevel">Bevel Width: %.0f px</string>
+    <string name="lens_refraction">Refraction: %.0f px</string>
+    <string name="lens_dispersion">Dispersion: %.2f</string>
+    <string name="lens_falloff">Refraction Falloff (inverse power): %.1f</string>
+    <string name="switch_a11y_opaque">Accessibility Opaque Fallback</string>
+    <string name="merge_hint">Drag the bubble near the capsule — edges merge like liquid</string>
+    <string name="text_param_title">Text Style</string>
+    <string name="param_size">Size dp</string>
+    <string name="param_blur">Blur</string>
+    <string name="param_bevel">Bevel ×em</string>
+    <string name="param_refract">Refraction ×em</string>
+    <string name="param_dispersion">Dispersion</string>
+    <string name="param_spec">Specular</string>
+    <string name="param_shadow">Inner shadow</string>
+    <string name="param_saturation">Saturation</string>
+    <string name="param_tint">Tint alpha</string>
+    <string name="param_tint_light">Tint: light (tap to toggle)</string>
+    <string name="param_tint_dark">Tint: dark (tap to toggle)</string>
+
+    <!-- Widgets Scene (ready-made components) -->
+    <string name="scene_widgets">Widgets</string>
+    <string name="widgets_tab_1">Home</string>
+    <string name="widgets_tab_2">Explore</string>
+    <string name="widgets_tab_3">Library</string>
+    <string name="widgets_button_regular">✨ Glass Button</string>
+    <string name="widgets_button_clear">Clear Material</string>
+    <string name="widgets_toast_button">Clicked: %1$s</string>
+    <string name="widgets_toast_tab">Tab: %1$s</string>
+    <string name="widgets_toast_fab">FAB clicked</string>
+    <string name="widgets_chip_explore">Explore</string>
+    <string name="widgets_chip_photos">Photos</string>
+    <string name="widgets_chip_videos">Videos</string>
+    <string name="widgets_chip_music">Music</string>
+    <string name="widgets_chip_paris">Paris</string>
+    <string name="widgets_toast_chip">Chip: %1$s</string>
+    <string name="widgets_toast_chip_removed">Removed: %1$s</string>
+    <string name="widgets_toast_filters">Filters: %1$s</string>
+    <string name="widgets_filters_none">none</string>
+
+    <!-- List Scene (M3 list items, merged / separated) -->
+    <string name="group_style_merged">Merged</string>
+    <string name="group_style_separated">Separated</string>
+    <string name="group_hint_merged">Merged: rows share flat edges, only the group outline refracts.</string>
+    <string name="group_hint_separated">Separated: every row is its own rounded card with a gap between.</string>
+    <string name="group_wifi_title">Wi‑Fi</string>
+    <string name="group_wifi_sub">Connected · Home 5G</string>
+    <string name="group_bt_title">Bluetooth</string>
+    <string name="group_bt_sub">On · 2 devices</string>
+    <string name="group_notif_title">Notifications</string>
+    <string name="group_notif_sub">3 apps muted</string>
+    <string name="group_display_title">Display</string>
+    <string name="group_display_sub">Adaptive brightness</string>
+    <string name="group_display_trailing">80%</string>
+    <string name="group_signout_title">Sign out</string>
+    <string name="group_wifi_detail">Home 5G · 866 Mbps · IPv6\nOther networks: Office, Cafe_Guest, iPhone</string>
+    <string name="group_bt_detail">Pixel Buds Pro · 74%\nGalaxy Watch · 52%</string>
+    <string name="group_notif_detail">Muted: Mail, Slack, Weather\nDo Not Disturb: 23:00 – 07:00</string>
+    <string name="group_display_detail">Brightness follows ambient light.\nRefresh rate: Smooth (up to 90 Hz)</string>
+    <string name="group_custom_caption">Custom content: any view inside a LiquidGlassListItem</string>
+    <string name="group_custom_airplane">Airplane mode</string>
+    <string name="group_custom_airplane_on">Airplane mode on</string>
+    <string name="group_custom_airplane_off">Airplane mode off</string>
+    <string name="group_custom_brightness">Brightness</string>
+
+    <!-- Glass Tint (drawer card) -->
+    <string name="section_glass_tint">Glass Tint</string>
+    <string name="tint_readout">%1$s · %2$s · %3$d%%</string>
+    <string name="tint_readout_none">No tint · glassTint = 0</string>
+    <string name="tint_none">None</string>
+    <string name="tint_blue">Blue</string>
+    <string name="tint_cyan">Cyan</string>
+    <string name="tint_green">Green</string>
+    <string name="tint_yellow">Yellow</string>
+    <string name="tint_orange">Orange</string>
+    <string name="tint_red">Red</string>
+    <string name="tint_pink">Pink</string>
+    <string name="tint_purple">Purple</string>
+
+    
+    <string name="liquid_glass_chip_close_description">Remove %1$s</string>
+
+    <!-- Backdrop Scene (backdropSource topologies) -->
+    <string name="scene_backdrop">Backdrop</string>
+    <string name="backdrop_mode_sibling">Sibling</string>
+    <string name="backdrop_mode_ancestor">Ancestor</string>
+    <string name="backdrop_hint_sibling">Glass sits in a transparent host beside the list; backdropSource points at the list content.</string>
+    <string name="backdrop_hint_ancestor">Glass sits two containers deep; backdropSource points at the scene root.</string>
+</resources>
+

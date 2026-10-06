@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration (machine-specific SDK path)
+local.properties
+
+# Keystore / signing
+*.jks
+*.keystore
+keystore.properties
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output.json
+
+# Native build intermediates (the prebuilt .so is committed on purpose)
+obj/
+libs/
+
+# Logs / crash
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
